@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>RGB LED</title>
+
+		<meta charset="utf-8">
+		<!-- Fit the app in phone's screen -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<meta name="format-detection" content="telephone=no">
+
+		<!-- Linking styles to our app -->
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+		<!-- Link scripts -->
+		<script type="text/javascript" src="js/NexpaqHeader.js"></script>
+		<script type="text/javascript" src="js/scripts.js"></script>
+	</head>
+
+<body>
+	<!-- App header -->
+	<h1 class="header">LED Flashlight</h1>
+
+	<!--Red, Green, Blue and White buttons -->
+	<p class="section">
+		<button class="button redb" id="redb"></button>
+		<button class="button greenb" id="greenb"></button>
+		<button class="button blueb" id="blueb"></button>
+		<button class="button whiteb" id="whiteb"></button>
+	</p>
+
+	<!-- RGB text boxes  -->
+	<p class="section">
+  	<input class="number-input" type="number" id="R_value" name="R" min="0" max="255" maxlength="3" value="0">
+  	<input class="number-input" type="number" id="G_value" name="G" min="0" max="255" maxlength="3" value="0">
+  	<input class="number-input" type="number" id="B_value" name="B" min="0" max="255" maxlength="3" value="0">
+	</p>
+
+	<!-- RGB button  -->
+ 	<p class="section">
+		<input type="button" id="rgb_button" value="change to any RGB color!" class="rgbbutton">
+	</p>
+
+	<!-- Off button  -->
+ 	<p class="section">
+		<input type="button" id="offbutton" value="off" class="offbutton">
+	</p>
+
+</body>
+</html>

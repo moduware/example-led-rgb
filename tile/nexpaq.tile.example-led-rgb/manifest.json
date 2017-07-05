@@ -1,0 +1,16 @@
+{
+  "id": "nexpaq.tile.example-led-rgb",
+  "name": "LED Example",
+  "description": "Tile for rgb led example",
+
+  "version": "1.0.0",
+  "changes": "Initial release",
+  "minumumAppVersion": "1.0.5",
+  "modules": [
+    "nexpaq.module.devmod"
+  ],
+  
+  "title": "RGB LED",
+  "color": "black",
+  "textColor": "white"
+}
