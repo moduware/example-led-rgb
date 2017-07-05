@@ -10,7 +10,7 @@
 
 #define RED		0 //assign red to pin 0
 #define GREEN 	1 //assign red to pin 1
-#define BLUE	2 //assign red to pin 2
+#define BLUE	    2 //assign red to pin 2
 #define length	2 //funtion's length
 
 // RECEIVE command - use range from 0x2700 to 0x27ff
@@ -20,8 +20,8 @@
 //define function's command code at t_my_app.c
 
 const MDK_REGISTER_CMD my_cmd_func_table[length] = { //Specify table's length according to number of commands used
-		{0x2700, Primary_colors},		// Function's command
-		{0x2702, RGB_LED}
+		{0x2700, SimpleCommands}, // command at address 2700
+		{0x2702, SetRgbColor} // command at address 2702
 };
 
 void np_api_setup() {
