@@ -35,7 +35,7 @@ void SimpleCommands (unsigned char*pData, unsigned char len) {
 
 // Checks that this is correct rgb value between 0 and 255
 int IsRGBValue(int value) {
-    return value >= 0 && value <= 225;
+    return value >= 0 && value <= 255;
 }
 
 //0x2702 receive command for any RGB  color
