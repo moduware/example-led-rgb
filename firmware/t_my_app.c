@@ -15,13 +15,13 @@
 // 0x2700 receive command to set primary colors + white or turn led off
 void SimpleCommands (unsigned char*pData, unsigned char len) {
 	if (len == 1) {
-		if (pData[0]==1) {
+		if (pData[0] == 1) {
 			setLedBrightness(255,0,0); //assign red
-		} else if (pData[0]==2) {
+		} else if (pData[0] == 2) {
 			setLedBrightness(0,255,0); //assign green
-		} else if (pData[0]==3) {
+		} else if (pData[0] == 3) {
 			setLedBrightness(0,0,255); //assign blue
-		} else if (pData[0]==4) {
+		} else if (pData[0] == 4) {
 			setLedBrightness(255,255,255); //assign white
 		} else {
 			setLedBrightness(0,0,0); //turn off
@@ -43,7 +43,7 @@ void SetRgbColor (unsigned char*pData, unsigned char len) {
 
     unsigned char response;
 
-    if(len != 3 || !IsRGBValue(pData[0]) || !IsRGBValue(pData[1]) || !IsRGBValue(pData[2])) {
+    if(len < 3 || !IsRGBValue(pData[0]) || !IsRGBValue(pData[1]) || !IsRGBValue(pData[2])) {
         response = 0x01; // Failure
     } else {
         //set RGB colors
