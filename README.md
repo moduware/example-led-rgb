@@ -19,6 +19,7 @@ Example module with rgb led, including firmware, module driver and tile.
   - [Stable user's version][stableapp] (more reliable)
 
 ## Breadboard configuration
+![breadboard]
 
 [stableapp]: https://nexpaq.com/app
 [unstableapp]: https://nexpaq.com/app-dev
