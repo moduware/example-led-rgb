@@ -1,0 +1,16 @@
+{
+  "id": "moduware.tile.example-led-rgb",
+  "name": "LED Example",
+  "description": "Tile for RGB LED example",
+
+  "version": "1.1.0",
+  "changes": "Moduware rebranding",
+  "minumumAppVersion": "1.1.9",
+  "modules": [
+    "nexpaq.module.devmod"
+  ],
+  
+  "title": "RGB LED",
+  "color": "black",
+  "textColor": "white"
+}
